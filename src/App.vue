@@ -1,14 +1,13 @@
 <script setup>
-
 import { store } from "./store/store.js";
 </script>
 
 <template>
   <div class="flex h-screen">
-    <div class="flex flex-col justify-center items-center p-4 w-full">
-      <div class="flex space-x-3 mb-4">
+    <div class="flex w-full flex-col items-center justify-center p-4">
+      <div class="mb-4 flex space-x-3">
         <span class="text-2xl">Welcom to Tic-Tac-Toe by</span>
-        <img src="/vue.svg" class="animate-spin inline" />
+        <img src="/vue.svg" class="inline animate-spin" />
       </div>
       <template v-if="!store.firstStage">
         <PlayingMode />

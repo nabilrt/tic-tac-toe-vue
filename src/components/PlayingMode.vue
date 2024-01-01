@@ -4,9 +4,9 @@ import { store } from "../store/store";
 
 <template>
   <div class="flex flex-col space-y-6">
-    <p class="font-semibold text-2xl uppercase">Select Your Playing Mode</p>
+    <p class="text-2xl font-semibold uppercase">Select Your Playing Mode</p>
     <select
-      class="px-4 py-4 border font-semibold text-sm border-[#41B883]"
+      class="border border-[#41B883] px-4 py-4 text-sm font-semibold"
       v-model="store.playingMode"
     >
       <option value="" selected>Choose An Option</option>
@@ -17,7 +17,7 @@ import { store } from "../store/store";
       type="button"
       @click="store.FirstStage(store.playingMode)"
       variant="secondary"
-      class="px-4 py-2 rounded-md font-semibold text-sm shadow-md disabled:opacity-50 disabled:cursor-not-allowed text-white bg-[#41B883] hover:bg-[#5affb5]"
+      class="rounded-md bg-[#41B883] px-4 py-2 text-sm font-semibold text-white shadow-md hover:bg-[#5affb5] disabled:cursor-not-allowed disabled:opacity-50"
     >
       Select
     </button>

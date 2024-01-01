@@ -1,5 +1,5 @@
 <script setup></script>
 
 <template>
-  <div class="flex mt-5">The Game is Drawn</div>
+  <div class="mt-5 flex">The Game is Drawn</div>
 </template>
